@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE=singularity-bpytop-1.2.13.sif
+IMAGE=singularity-bpytop-1.0.68.sif
 DEFINITION=Singularity
 
 if [ -f $IMAGE ]; then
