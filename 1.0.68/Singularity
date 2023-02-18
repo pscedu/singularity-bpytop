@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: continuumio/miniconda3
+From: continuumio/miniconda3:master
 
 %labels
     AUTHOR icaoberg
@@ -11,4 +11,5 @@ From: continuumio/miniconda3
 
 %post
     apt update
-    conda install -c conda-forge bpytop
+    apt upgrade -y
+    /opt/conda/bin/conda install -c conda-forge bpytop
